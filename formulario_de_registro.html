@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario de Datos de Cliente</title>
+</head>
+<body>
+<h1>Formulario de registro</h1>
+<h4>Escribe tus datos de usuario en el siguiente formulario y por ultimo aprieta el boton enviar.</h4>
+<form>
+<label for="usuario">Usuario:</label>
+<input type="text" placeholder="Escriba su usuario" id="usuario" name="usuario" required><br><br>
+<label for="contrasena">Contraseña:</label>
+<input type="password" placeholder="Escriba su contraseña" id="contrasena" name="contrasena"
+required><br><br>
+<label for="nombre">Nombre Completo:</label>
+<input type="text" placeholder="Escriba su nombre completo" id="nombre" name="nombre"
+required><br><br>
+<label for="direccion">Dirección:</label>
+<input type="text" placeholder="Escriba su dirección" id="direccion" name="direccion" required><br><br>
+<label for="ciudad">Ciudad:</label>
+<select id="ciudad" name="ciudad">
+<option value="guayaquil">Guayaquil</option>
+<option value="quito">Quito</option>
+<option value="ambato">Ambato</option>
+<option value="manta">Manta</option>
+<option value="cuenca">Cuenca</option>
+<option value="loja">Loja</option>
+<option value="ibarra">Ibarra</option>
+<option value="machala">Machala</option>
+<option value="portoviejo">Portoviejo</option>
+<option value="quevedo">Quevedo</option>
+</select><br><br>
+<label for="tipo">Tipo de cliente:</label><br>
+<input type="radio"name="tipo" >Particular<br>
+<input type="radio"name="tipo" >Profesional <br><br>
+
+<label for="comentarios">Comentarios:</label><br>
+<textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+<input type="checkbox">Acepto los terminos y condiciones de uso<br><br>
+<button type="submit">Enviar</button>
+<button type="reset">Borrar formulario</button>
+</form>
+</body>
+</html>
